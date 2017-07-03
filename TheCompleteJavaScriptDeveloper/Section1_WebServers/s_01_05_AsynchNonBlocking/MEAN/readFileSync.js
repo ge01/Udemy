@@ -6,8 +6,12 @@ console.log("Going to get a file");
 //var file = fs.readFileSync('readFileSync.js');
 
 // Read file asynchronosly
-fs.readFile('readFileSync.js', function(err, file) {
+
+// Named callbacks
+var onFileLoad = function(err, file) {
   console.log("Got the file");
-});
+};
+
+fs.readFile('readFileSync.js', onFileLoad);
 
 console.log("App continuess...");
