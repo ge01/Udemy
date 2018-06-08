@@ -27,8 +27,9 @@ namespace _0430_Arrays
             Console.WriteLine(flags[1]);    // False
             Console.WriteLine(flags[2]);    // False
 
-            Console.WriteLine(flags[0]);    
-            Console.WriteLine()
+            var names = new string[3] { "Jack", "John", "Mary" };
+
+            Console.WriteLine(names[0]);    // Jack
         }
     }
 }
